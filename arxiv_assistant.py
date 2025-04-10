@@ -292,6 +292,7 @@ if __name__ == '__main__':
     OPENAI_API_BASE = os.environ.get(
         "OPENAI_API_BASE", "https://api.deepseek.com/v1")
 
+    printf(f"{OPENAI_API_KEY},{OPENAI_MODEL},{OPENAI_API_BASE}")
     # 定义提示词模板
     TRANSLATION_PROMPT = """我将给你一个人工智能领域的论文摘要，你需要翻译成中文，注意通顺流畅，领域专有用语（如transformer, token, logit）不用翻译。输出纯文本，不需要Markdown格式。
 {text}"""
